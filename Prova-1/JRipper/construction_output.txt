@@ -1,0 +1,52 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     base_regras2
+Instances:    20
+Attributes:   5
+              Historia de Credito
+              Divida
+              Garantia
+              Renda
+              Risco
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(Renda >= 35) and (Historia de Credito >= 1) => Risco=Baixo (5.0/0.0)
+ => Risco=Alto (15.0/7.0)
+
+Number of Rules : 2
+
+
+Time taken to build model: 0.01 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances           9               45      %
+Incorrectly Classified Instances        11               55      %
+Kappa statistic                          0.1406
+Mean absolute error                      0.3937
+Root mean squared error                  0.5155
+Relative absolute error                 87.3274 %
+Root relative squared error            107.3322 %
+Total Number of Instances               20     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,750    0,500    0,500      0,750    0,600      0,250    0,599     0,583     Alto
+                 0,000    0,143    0,000      0,000    0,000      -0,218   0,500     0,339     Moderado
+                 0,500    0,214    0,500      0,500    0,500      0,286    0,631     0,617     Baixo
+Weighted Avg.    0,450    0,307    0,350      0,450    0,390      0,120    0,579     0,520     
+
+=== Confusion Matrix ===
+
+ a b c   <-- classified as
+ 6 0 2 | a = Alto
+ 5 0 1 | b = Moderado
+ 1 2 3 | c = Baixo
