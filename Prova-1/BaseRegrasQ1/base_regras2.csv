@@ -1,0 +1,21 @@
+Historia de Credito,Divida,Garantia,Renda,Risco
+0,1,0,0,Alto
+1,1,0,15,Alto
+1,0,0,15,Moderado
+1,0,0,0,Alto
+1,0,0,35,Baixo
+1,0,1,35,Baixo
+0,0,0,0,Alto
+0,0,1,35,Moderado
+2,0,0,35,Baixo
+2,1,1,35,Baixo
+2,1,0,0,Alto
+2,1,0,15,Moderado
+2,1,0,35,Baixo
+0,1,0,15,Alto
+0,1,1,15,Moderado
+0,0,0,35,Alto
+2,0,1,15,Baixo
+2,0,0,0,Moderado
+1,1,1,15,Moderado
+1,1,0,0,Alto
